@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <div id="loginScreenBG" class="hidden"></div>
+  <div class="centro hidden" id="loginModal">
+    <div class="login-modal">
+      <button class="modal-cerrar centro" onclick="CerrarModal()">x</button>
+      <h2 class="modal-tittle">Iniciar Sesión en Tell Me</h2>
+      <h4 class="modal-text">Usuario:</h4>
+      <input autocomplete="off" class="modal-input" id="userInput" />
+      <h4 class="modal-text">Contraseña:</h4>
+      <input class="modal-input" type="password" id="userContra"/>
+      <br />
+      <input
+        type="submit"
+        value="Iniciar Sesión"
+        class="modal-input"
+        onclick="Logeado()"
+      />
+      <br />
+      <a
+        style="font-size: 100%"
+        href="signUp.html"
+        style="font-style: bold; font-size: 25px"
+        >¿No tienes cuenta? ¡Regístrate aquí!</a
+      >
+    </div>
+  </div>
+  <body id="inicio">
+    <header>
+      <div class="centro">
+        <a href="#inicio" class="titulos logo">Tell me</a>
+      </div>
+      <div class="header-links-display">
+        <a class="header-text links" href="#cartas">Nosotros</a>
+        <a class="header-text links" href="#equipo">Equipo</a>
+        <a class="header-text links" href="#redes">Redes</a>
+
+        <div class="header-button-display centro">
+          <button onclick="AbrirLogin()" class="header-button">
+            Suscribirse
+            <div class="header-button-shine"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <img class="body-banner" src="img/banner.png" />
+    <div class="banner-degradado">
+      <div class="banner-display centro">
+        <h2 class="titulos banner-titulo">Tell me</h2>
+        <p class="banner-texto">
+          Recuerda el poder transformador de la psicología y desbloquea tu
+          máximo potencial, obtén el apoyo experto que necesitas para superar
+          obstáculos, encontrar claridad y alcanzar una tranquilidad emocional
+          duradera
+        </p>
+        <a href="#cartas" style="width: 40%">
+          <button class="banner-button">Conocenos!</button>
+        </a>
+      </div>
+    </div>
+    <div class="space-cartas"></div>
+    <h2 class="body-titulo centro" id="cartas">Sobre nosotros</h2>
+    <div class="body-cards-display centro">
+      <div class="body-cards">
+        <img class="card-img" src="img/card-img-1.png" />
+        <h4 class="card-titulo">Enfoque centrado en el bienestar emocional:</h4>
+        <p class="card-texto">
+          En Tell me, nos apasiona promover el bienestar emocional y la salud
+          mental. Nuestro enfoque se basa en proporcionar un ambiente cálido y
+          comprensivo, donde cada individuo pueda sentirse seguro y apoyado.
+          Nuestro equipo de psicólogos altamente capacitados está comprometido
+          en ayudar a nuestros clientes a superar los desafíos emocionales,
+          desarrollar habilidades de afrontamiento y alcanzar un mayor
+          equilibrio en sus vidas.
+        </p>
+      </div>
+      <div class="body-cards">
+        <img class="card-img" src="img/card-img-2.png" />
+        <h4 class="card-titulo">Experiencia y profesionalidad:</h4>
+        <p class="card-texto">
+          Con años de experiencia en el campo de la psicología, nuestro equipo
+          está formado por profesionales altamente cualificados y comprometidos.
+          Nos mantenemos actualizados en las últimas investigaciones y enfoques
+          terapéuticos para brindar a nuestros clientes la mejor atención
+          posible. Valoramos la confidencialidad y el respeto hacia cada
+          individuo, adaptando nuestros enfoques terapéuticos a las necesidades
+          y metas específicas de cada cliente.
+        </p>
+      </div>
+      <div class="body-cards">
+        <img class="card-img" src="img/card-img-3.png" />
+        <h4 class="card-titulo">Colaboración y crecimiento personal:</h4>
+        <p class="card-texto">
+          Creemos en la importancia de una relación terapéutica sólida y
+          colaborativa. Trabajamos en estrecha colaboración con nuestros
+          clientes, fomentando un espacio de diálogo abierto y sin prejuicios.
+          Nuestro objetivo es ayudar a nuestros clientes a desarrollar una mayor
+          comprensión de sí mismos, descubrir sus fortalezas y desbloquear su
+          potencial para el crecimiento personal. Estamos comprometidos en guiar
+          a nuestros clientes a lo largo de su viaje hacia una vida más plena y
+          significativa.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="body-titulo centro" id="equipo">Nuestro equipo</h2>
+    <div class="psicologos-container">
+      <div class="psicologos-display">
+        <img class="psicologos-img" src="Img2/Psicologo1.png">
+        <img class="psicologos-img" src="Img2/Psicologo2.png">
+        <img class="psicologos-img" src="Img2/Psicologo3.png">
+        <img class="psicologos-img" src="Img2/Psicologo4.png">
+        <img class="psicologos-img" src="Img2/Psicologo1.png">
+        <img class="psicologos-img" src="Img2/Psicologo2.png">
+        <img class="psicologos-img" src="Img2/Psicologo3.png">
+        <img class="psicologos-img" src="Img2/Psicologo4.png">
+      </div>
+    </div>
+    <div class="space-equipo"></div>
+    <h2 class="body-titulo centro">Comunidad</h2>
+    <div id="redes">
+      <h2 class="titulos centro comunidad-titulos">Nuestras Redes</h2>
+      <h2 class="titulos centro comunidad-titulos">Usuarios Satisfechos</h2>
+      <div class="body-redes-display centro">
+        <div class="body-red">
+          <img class="redLogo" src="img/IGLogo.png" />
+          <a class="red-link" style="font-size: 20px">tell_me</a>
+        </div>
+        <div class="body-red">
+          <img class="redLogo" src="img/YoutubeLogo.png" />
+          <a class="red-link" style="font-size: 20px">Tell Me</a>
+        </div>
+        <div class="body-red">
+          <img class="redLogo" src="img/FacebookLogo.png" />
+          <a class="red-link" style="font-size: 20px">TellMe Oficial</a>
+        </div>
+      </div>
+
+      <div class="body-comentarios-display">
+        <div class="body-comentario">
+          <img class="comentario-img" src="img/user1.png" />
+          <div class="comentario-texto-contenedor">
+            <h4 class="comentario-name textos">Luis Eduardo</h4>
+            <p class="comentario-text textos">
+              Actualmente me esta ayudando con mi depresion
+            </p>
+          </div>
+        </div>
+
+        <div class="body-comentario">
+          <img class="comentario-img" src="img/user2.jpeg" />
+          <div class="comentario-texto-contenedor">
+            <h4 class="comentario-name textos">SebasZM</h4>
+            <p class="comentario-text textos">
+              La verdad tell me esta ayudando a superar traumas y rencores del
+              pasado
+            </p>
+          </div>
+        </div>
+
+        <div class="body-comentario">
+          <img class="comentario-img" src="img/user3.jpeg" />
+          <div class="comentario-texto-contenedor">
+            <h4 class="comentario-name textos">just.betsy</h4>
+            <p class="comentario-text textos">
+              Tell me me ayudo mucho, aprendi a controlar mis emociones y mi
+              relacion mejoro
+            </p>
+          </div>
+        </div>
+
+        <div class="body-comentario">
+          <img class="comentario-img" src="img/user4.jpg" />
+          <div class="comentario-texto-contenedor">
+            <h4 class="comentario-name textos">CristianG</h4>
+            <p class="comentario-text textos">Ahora llevo una vida mas sana</p>
+          </div>
+        </div>
+
+        <div class="body-comentario">
+          <img class="comentario-img" src="img/user5.png" />
+          <div class="comentario-texto-contenedor">
+            <h4 class="comentario-name textos">Ariana_Valencia</h4>
+            <p class="comentario-text textos">Recomendadisimo</p>
+          </div>
+        </div>
+
+        <div class="body-comentario">
+          <img class="comentario-img" src="img/user7.png" />
+          <div class="comentario-texto-contenedor">
+            <h4 class="comentario-name textos">Saul.G</h4>
+            <p class="comentario-text textos">
+              Gracias por todo, este es mi lugar de confort
+            </p>
+          </div>
+        </div>
+
+        <div class="body-comentario">
+          <img class="comentario-img" src="img/user8.png" />
+          <div class="comentario-texto-contenedor">
+            <h4 class="comentario-name textos">Haru °-°</h4>
+            <p class="comentario-text textos">
+              Estoy aprendiendo a tener habitos para reducir el estres
+            </p>
+          </div>
+        </div>
+
+        <div class="body-comentario">
+          <img class="comentario-img" src="img/user9.png" />
+          <div class="comentario-texto-contenedor">
+            <h4 class="comentario-name textos">Andrea</h4>
+            <p class="comentario-text textos">Los psicólogos son muy buenos</p>
+          </div>
+        </div>
+
+        <div class="body-comentario">
+          <img class="comentario-img" src="img/user10.png" />
+          <div class="comentario-texto-contenedor">
+            <h4 class="comentario-name textos">Leorio</h4>
+            <p class="comentario-text textos">
+              Fue una buena inversion, ya no tengo problemas de ira
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h4 class="footer-text"> &copy; 2023 Tell Me. Todos los derechos reservados.</h4>
+      <div class="creditos">
+        <a href="https://www.instagram.com/_sebaszm/" class="creditos-text">Desarrollado por SebasZMDev</a>
+        <img class="creditos-img" src="img/PeepoHappy2.png" />
+      </div>
+    </footer>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
